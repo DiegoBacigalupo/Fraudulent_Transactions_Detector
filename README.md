@@ -1,12 +1,39 @@
 
 # FraudGuard AI - Deteccion de transacciones Fraudulentas
 
-**Versiones:**
-*
+
 ## Versión 1:
-  FraudGuard AI - Detección de Fraudes (Versión 1)
-  
-   **Descripción:** Implementa la funcionalidad base para ingresar datos de una transacción y obtener una predicción de fraude utilizando un modelo de Machine Learning y un análisis de OpenAI.
+  FraudGuard AI - Detección de Fraudes (Versión 1) - Prototipo 
+
+## Descripción General:
+
+La versión 1 de FraudGuard AI es un prototipo básico para la detección de fraudes. Su funcionalidad es muy limitada y se utiliza principalmente para demostrar el concepto de detección de fraudes utilizando un modelo de Machine Learning pre-entrenado y la API de OpenAI en un entorno controlado.
+
+## Funcionalidades Limitadas:
+
+* **Entrada de Datos Estática:**
+    * El usuario solo puede seleccionar valores de un conjunto de datos predefinido a través de una interfaz simple en Streamlit.
+    * No existe la posibilidad de cargar datos externos o personalizados.
+* **Predicción Binaria con Modelo Pre-entrenado:**
+    * Un modelo de Machine Learning (RandomForestClassifier) ya entrenado realiza una predicción binaria: "Fraude" o "No fraude".
+    * El usuario no tiene control sobre el modelo ni puede modificarlo.
+* **Análisis Textual Limitado con OpenAI:**
+    * La API de OpenAI (gpt-3.5-turbo) proporciona un análisis textual básico de la transacción.
+    * Este análisis está limitado por las capacidades del modelo y la información proporcionada.
+
+## Limitaciones Críticas:
+
+* **Conjunto de Datos Fijo:**
+    * El análisis se restringe completamente al conjunto de datos predefinido en el código.
+    * Esto limita drásticamente la aplicabilidad y utilidad de la aplicación.
+* **Modelo de Machine Learning Inalterable:**
+    * El modelo de Machine Learning no se puede ajustar, reentrenar ni personalizar.
+    * Esto significa que la precisión y el rendimiento son fijos y potencialmente bajos.
+* **Recursos:**
+    * No tiene ninguna optimización a nivel de recursos.
+* **Falsos positivos:**
+    * Por las limitaciones del modelo, tiene una alta posibilidad de generar falsos positivos.
+
   
 *   
 ## Versión 2 :
