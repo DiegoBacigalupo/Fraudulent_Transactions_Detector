@@ -6,12 +6,7 @@
 * **Versión 1:**
     * **Descripción:** Implementa la funcionalidad base para ingresar datos de una transacción y obtener una predicción de fraude utilizando un modelo de Machine Learning y un análisis de OpenAI.
   
-    * **Cómo ejecutar:** Asegúrate de tener las dependencias instaladas (pandas, scikit-learn, openai, streamlit). Luego, ejecuta el archivo `main.py`:
-        ```bash
-        streamlit run main.py
-        ```
-        Por defecto, se ejecutará la Versión 1.
-
+   
 * **Versión 2 :**
      FraudGuard AI - Detección de Fraudes (Versión 2)
 
