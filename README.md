@@ -3,11 +3,11 @@
 
 **Versiones:**
 *
-## Versión 1:**
+## Versión 1:
     * **Descripción:** Implementa la funcionalidad base para ingresar datos de una transacción y obtener una predicción de fraude utilizando un modelo de Machine Learning y un análisis de OpenAI.
   
 *   
-## Versión 2 :**
+## Versión 2 :
      FraudGuard AI - Detección de Fraudes (Versión 2)
 
 ## Descripción General
