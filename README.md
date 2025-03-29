@@ -4,7 +4,7 @@
 **Versiones:**
 *
 ## Versión 1:
-    * **Descripción:** Implementa la funcionalidad base para ingresar datos de una transacción y obtener una predicción de fraude utilizando un modelo de Machine Learning y un análisis de OpenAI.
+   **Descripción:** Implementa la funcionalidad base para ingresar datos de una transacción y obtener una predicción de fraude utilizando un modelo de Machine Learning y un análisis de OpenAI.
   
 *   
 ## Versión 2 :
