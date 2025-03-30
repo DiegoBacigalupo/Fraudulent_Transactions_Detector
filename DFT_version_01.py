@@ -1,3 +1,6 @@
+#Link drive para descarga de archivo transacciones_sinteticas.csv: https://drive.google.com/file/d/16SVzC8_nUZfC9SORxMQbI_rKlx5KrZrN/view?usp=sharing
+
+
 import streamlit as st
 import openai
 import pandas as pd
