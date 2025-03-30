@@ -111,7 +111,7 @@ FraudGuard AI es una aplicación de Streamlit diseñada para detectar transaccio
 1.  Clona este repositorio:
 
     ```bash
-    git clone [https://github.com/tu-usuario/nombre-del-repo.git](https://github.com/tu-usuario/nombre-del-repo.git)
+    git clone https://github.com/DiegoBacigalupo/Fraudulent_Transactions_Detector.git
     cd nombre-del-repo
     ```
 
@@ -119,6 +119,7 @@ FraudGuard AI es una aplicación de Streamlit diseñada para detectar transaccio
 
     ```bash
     python3 -m venv venv
+    
     source venv/bin/activate  # En Linux/macOS
     venv\Scripts\activate  # En Windows
     ```
@@ -136,7 +137,7 @@ FraudGuard AI es una aplicación de Streamlit diseñada para detectar transaccio
 1.  Ejecuta la aplicación:
 
     ```bash
-    streamlit run app.py
+    streamlit run DFT_version_03.py
     ```
 
 2.  Sigue las instrucciones en la aplicación web.
