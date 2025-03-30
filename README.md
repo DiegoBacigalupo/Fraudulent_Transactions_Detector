@@ -1,5 +1,7 @@
 # FraudGuard AI 
 # Detección de Transacciones Fraudulentas
+---
+---
 
 ## Versión 1: FraudGuard AI - Detección de Fraudes (Versión 1) - Prototipo
 
@@ -13,6 +15,7 @@ La versión 1 de FraudGuard AI es un prototipo básico para la detección de fra
 * **Predicción Binaria:** Un modelo de Machine Learning pre-entrenado realiza una predicción binaria: "Fraude" o "No fraude".
 * **Análisis Textual Limitado:** La API de OpenAI proporciona un análisis textual básico de la transacción.
 
+---
 ---
 
 ## Versión 2: FraudGuard AI - Detección de Fraudes (Versión 2)
