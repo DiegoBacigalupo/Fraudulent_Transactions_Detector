@@ -35,6 +35,7 @@ La versión 1 de FraudGuard AI es un prototipo básico para la detección de fra
     * No tiene ninguna optimización a nivel de recursos.
 * **Falsos positivos:**
     * Por las limitaciones del modelo, tiene una alta posibilidad de generar falsos positivos.
+    * 
 
 ## Versión 2: FraudGuard AI - Detección de Fraudes (Versión 2)
 
