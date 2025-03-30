@@ -63,6 +63,8 @@ Para proporcionar explicaciones más precisas sobre las transacciones de alto ri
 
 Al combinar la capacidad del modelo de ML para identificar patrones con la capacidad de OpenAI para generar explicaciones en lenguaje natural, la aplicación proporciona un análisis más completo y comprensible de las transacciones de alto riesgo.
 
+---
+---
 
 
 ### Versión 3 (Próximamente):
