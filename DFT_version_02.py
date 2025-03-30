@@ -1,4 +1,4 @@
-# Datasets de prueba (archivos con y sin columna obbjetivo): https://drive.google.com/drive/folders/1gPFAfwKYNmjR2GNBR_uQGogiW9twF4q3?usp=sharing
+# Datasets de prueba (archivos con y sin columna objetivo): https://drive.google.com/drive/folders/1gPFAfwKYNmjR2GNBR_uQGogiW9twF4q3?usp=sharing
 
 import streamlit as st
 import openai
