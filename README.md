@@ -4,37 +4,13 @@
 
 ### Descripción General:
 
-La versión 1 de FraudGuard AI es un prototipo básico para la detección de fraudes. Su funcionalidad es muy limitada y se utiliza principalmente para demostrar el concepto de detección de fraudes utilizando un modelo de Machine Learning pre-entrenado y la API de OpenAI en un entorno controlado.
+La versión 1 de FraudGuard AI es un prototipo básico para la detección de fraudes. Su funcionalidad es limitada y se utiliza principalmente para demostrar el concepto de detección de fraudes.
 
-### Funcionalidades Limitadas:
+### Funcionalidades:
 
-* **Entrada de Datos Estática:**
-
-    * El usuario solo puede seleccionar valores de un conjunto de datos predefinido a través de una interfaz simple en Streamlit.
-    * No existe la posibilidad de cargar datos externos o personalizados.
-* **Predicción Binaria con Modelo Pre-entrenado:**
-
-    * Un modelo de Machine Learning (RandomForestClassifier) ya entrenado realiza una predicción binaria: "Fraude" o "No fraude".
-    * El usuario no tiene control sobre el modelo ni puede modificarlo.
-* **Análisis Textual Limitado con OpenAI:**
-
-    * La API de OpenAI (gpt-3.5-turbo) proporciona un análisis textual básico de la transacción.
-    * Este análisis está limitado por las capacidades del modelo y la información proporcionada.
-
-### Limitaciones Críticas:
-
-* **Conjunto de Datos Fijo:**
-
-    * El análisis se restringe completamente al conjunto de datos predefinido en el código.
-    * Esto limita drásticamente la aplicabilidad y utilidad de la aplicación.
-* **Modelo de Machine Learning Inalterable:**
-
-    * El modelo de Machine Learning no se puede ajustar, reentrenar ni personalizar.
-    * Esto significa que la precisión y el rendimiento son fijos y potencialmente bajos.
-* **Recursos:**
-    * No tiene ninguna optimización a nivel de recursos.
-* **Falsos positivos:**
-    * Por las limitaciones del modelo, tiene una alta posibilidad de generar falsos positivos.
+* **Entrada de Datos Estática:** El usuario puede seleccionar valores de un conjunto de datos predefinido.
+* **Predicción Binaria:** Un modelo de Machine Learning pre-entrenado realiza una predicción binaria: "Fraude" o "No fraude".
+* **Análisis Textual Limitado:** La API de OpenAI proporciona un análisis textual básico de la transacción.
 
 ---
 
@@ -43,6 +19,10 @@ La versión 1 de FraudGuard AI es un prototipo básico para la detección de fra
 **Descripción General**
 
 Esta aplicación combina el poder del Machine Learning (ML) y la Inteligencia Artificial (IA) para detectar transacciones fraudulentas. Permite a los usuarios cargar sus propios datasets, entrenar modelos de ML y obtener análisis detallados de transacciones de alto riesgo utilizando la API de OpenAI.
+
+### Optimización de Recursos
+
+El modelo de ML se utiliza para realizar una predicción inicial y filtrar las transacciones de alto riesgo. La API de OpenAI se utiliza solo para analizar las transacciones de alto riesgo, lo que reduce el consumo de tokens y los costos.
 
 ### Funcionalidades
 
@@ -79,9 +59,7 @@ Para proporcionar explicaciones más precisas sobre las transacciones de alto ri
 
 Al combinar la capacidad del modelo de ML para identificar patrones con la capacidad de OpenAI para generar explicaciones en lenguaje natural, la aplicación proporciona un análisis más completo y comprensible de las transacciones de alto riesgo.
 
-### Optimización de Recursos
 
-El modelo de ML se utiliza para realizar una predicción inicial y filtrar las transacciones de alto riesgo. La API de OpenAI se utiliza solo para analizar las transacciones de alto riesgo, lo que reduce el consumo de tokens y los costos.
 
 ### Versión 3 (Próximamente):
 
@@ -95,8 +73,8 @@ El modelo de ML se utiliza para realizar una predicción inicial y filtrar las t
 
     ```bash
     python -m venv venv
-    source venv/bin/activate  # En Linux/macOS
-    venv\Scripts\activate    # En Windows
+    source venv/bin/activate # En Linux/macOS
+    venv\Scripts\activate # En Windows
     ```
 4.  Instala las dependencias: `pip install -r requirements.txt` (si tienes un archivo `requirements.txt`) o `pip install pandas scikit-learn openai streamlit`
 5.  Ejecuta la aplicación: `streamlit run main.py`
