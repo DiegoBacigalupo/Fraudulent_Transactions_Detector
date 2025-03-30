@@ -1,4 +1,7 @@
-# Datasets de prueba (archivo con columna objetivo para entrenar modelo y archivo sin columna objetivo para que el modelo analice): https://drive.google.com/drive/folders/1gPFAfwKYNmjR2GNBR_uQGogiW9twF4q3?usp=sharing
+# Datasets de prueba:
+# https://drive.google.com/drive/folders/1gPFAfwKYNmjR2GNBR_uQGogiW9twF4q3?usp=sharing
+# entrenar modelo: creditcard_con_columna_objetivo.csv
+# analisis de transferencias: creditcard_sin_columna_objetivo.csv
 
 import streamlit as st
 import openai
