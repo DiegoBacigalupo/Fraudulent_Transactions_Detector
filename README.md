@@ -1,4 +1,5 @@
-# FraudGuard AI - Detección de Transacciones Fraudulentas
+# FraudGuard AI 
+# Detección de Transacciones Fraudulentas
 
 ## Versión 1: FraudGuard AI - Detección de Fraudes (Versión 1) - Prototipo
 
