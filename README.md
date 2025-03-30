@@ -66,31 +66,79 @@ Al combinar la capacidad del modelo de ML para identificar patrones con la capac
 ---
 ---
 
+## Versión 3: FraudGuard AI - Detección de Fraudes (Versión 3)
 
-### Versión 3 (Próximamente):
+## Descripción
 
-* [Aquí se describirá la Versión 3 cuando esté lista]
+FraudGuard AI es una aplicación de Streamlit diseñada para detectar transacciones fraudulentas utilizando modelos de Machine Learning e Inteligencia Artificial. La aplicación permite a los usuarios entrenar modelos personalizados a partir de sus propios datos y analizar nuevas transacciones para identificar posibles fraudes.
 
-## Instalación:
+## Funcionalidades
 
-1.  Clona el repositorio: `git clone <URL_DE_TU_REPOSITORIO>`
-2.  Navega al directorio del proyecto: `cd FraudGuard-AI`
-3.  Crea y activa el entorno virtual (recomendado):
+* **Entrenamiento de Modelos Personalizados:** Los usuarios pueden subir sus propios datasets para entrenar modelos de Machine Learning. Se admiten archivos CSV.
+* **Selección de Características y Objetivo:** Los usuarios pueden seleccionar qué columnas de sus datos se utilizarán como características y cuál será la columna objetivo.
+* **Recomendación de Modelo:** La aplicación puede recomendar el modelo de Machine Learning más adecuado para los datos del usuario, utilizando la API de OpenAI.
+* **Soporte para Múltiples Modelos:** Los usuarios pueden elegir entre varios modelos de Machine Learning populares, incluyendo Random Forest, Gradient Boosting, Regresión Logística, y más.
+* **Análisis de Transacciones:** Los usuarios pueden subir un dataset de transacciones para ser analizado por el modelo entrenado. La aplicación marcará las transacciones que se consideren fraudulentas.
+* **Explicaciones Detalladas:** Para cada transacción marcada como fraudulenta, la aplicación proporciona una explicación detallada de los factores que contribuyeron a la decisión, utilizando la API de OpenAI.
+* **Métricas de Rendimiento:** Se muestran métricas de rendimiento del modelo, como accuracy, precision, recall, F1-score y AUC-ROC.
+* **Matriz de Confusión:** Se visualiza la matriz de confusión para evaluar el rendimiento del modelo.
+
+## Cómo Funciona
+
+1.  **Entrenamiento del Modelo:**
+    * El usuario sube un dataset en formato CSV.
+    * El usuario selecciona la columna objetivo y las columnas de características.
+    * Opcionalmente, la aplicación recomienda un modelo de Machine Learning.
+    * El usuario selecciona un modelo y lo entrena.
+2.  **Análisis de Transacciones:**
+    * El usuario sube un dataset de transacciones en formato CSV.
+    * La aplicación utiliza el modelo entrenado para predecir qué transacciones son fraudulentas.
+    * Se muestran las transacciones fraudulentas detectadas.
+    * El usuario puede solicitar una explicación detallada para cada transacción fraudulenta.
+
+## Requisitos
+
+* Python 3.6 o superior
+* Streamlit
+* OpenAI Python library
+* Pandas
+* Scikit-learn
+* Matplotlib
+* Seaborn
+
+## Instalación
+
+1.  Clona este repositorio:
 
     ```bash
-    python -m venv venv
-    source venv/bin/activate # En Linux/macOS
-    venv\Scripts\activate # En Windows
+    git clone [https://github.com/tu-usuario/nombre-del-repo.git](https://github.com/tu-usuario/nombre-del-repo.git)
+    cd nombre-del-repo
     ```
-4.  Instala las dependencias: `pip install -r requirements.txt` (si tienes un archivo `requirements.txt`) o `pip install pandas scikit-learn openai streamlit`
-5.  Ejecuta la aplicación: `streamlit run main.py`
 
-## Dependencias:
+2.  Crea un entorno virtual (recomendado):
 
-* pandas
-* scikit-learn
-* openai
-* streamlit
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate  # En Linux/macOS
+    venv\Scripts\activate  # En Windows
+    ```
 
+3.  Instala las dependencias:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  Obtén una API Key de OpenAI desde [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys).
+
+## Uso
+
+1.  Ejecuta la aplicación:
+
+    ```bash
+    streamlit run app.py
+    ```
+
+2.  Sigue las instrucciones en la aplicación web.
 
 
